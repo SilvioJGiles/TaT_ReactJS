@@ -1,0 +1,344 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Asado",
+      "descripcion": "",
+      "precio": 7700,
+      "imagen": "/imagenes/asado.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 2,
+      "nombre": "Asado de Falda",
+      "descripcion": "",
+      "precio": 4860,
+      "imagen": "/imagenes/asado_de_falda.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 3,
+      "nombre": "Azotillo",
+      "descripcion": "",
+      "precio": 4860,
+      "imagen": "/imagenes/azotillo.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 4,
+      "nombre": "Bife Ancho",
+      "descripcion": "",
+      "precio": 7490,
+      "imagen": "/imagenes/bife_ancho.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 5,
+      "nombre": "Bife Angosto",
+      "descripcion": "",
+      "precio": 7860,
+      "imagen": "/imagenes/bife_angosto.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 6,
+      "nombre": "Bife con Lomo",
+      "descripcion": "",
+      "precio": 7860,
+      "imagen": "/imagenes/bife_con_lomo.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 7,
+      "nombre": "Bola de Lomo",
+      "descripcion": "",
+      "precio": 8510,
+      "imagen": "/imagenes/bola_de_lomo.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 8,
+      "nombre": "Carnaza de Paleta",
+      "descripcion": "",
+      "precio": 5620,
+      "imagen": "/imagenes/carnaza_de_paleta.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 9,
+      "nombre": "Cogote",
+      "descripcion": "",
+      "precio": 5620,
+      "imagen": "/imagenes/cogote.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 10,
+      "nombre": "Colita de Cuadril",
+      "descripcion": "",
+      "precio": 10100,
+      "imagen": "/imagenes/colita_de_cuadril.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 11,
+      "nombre": "Corazón de Cuadril",
+      "descripcion": "",
+      "precio": 5300,
+      "imagen": "/imagenes/corazon_de_cuadril.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 12,
+      "nombre": "Cuadrada",
+      "descripcion": "",
+      "precio": 8420,
+      "imagen": "/imagenes/cuadrada.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 13,
+      "nombre": "Cuadril",
+      "descripcion": "",
+      "precio": 9100,
+      "imagen": "/imagenes/cuadril.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 14,
+      "nombre": "Entraña",
+      "descripcion": "",
+      "precio": 9100,
+      "imagen": "/imagenes/entrana.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 15,
+      "nombre": "Espinazo",
+      "descripcion": "",
+      "precio": 4760,
+      "imagen": "/imagenes/espinazo.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 16,
+      "nombre": "Falda",
+      "descripcion": "",
+      "precio": 4760,
+      "imagen": "/imagenes/falda.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 17,
+      "nombre": "Garrón",
+      "descripcion": "",
+      "precio": 4760,
+      "imagen": "/imagenes/garron.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 18,
+      "nombre": "Lomo",
+      "descripcion": "",
+      "precio": 11910,
+      "imagen": "/imagenes/lomo.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 19,
+      "nombre": "Marucha",
+      "descripcion": "",
+      "precio": 4760,
+      "imagen": "/imagenes/marucha.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 20,
+      "nombre": "Matambre",
+      "descripcion": "",
+      "precio": 8090,
+      "imagen": "/imagenes/matambre.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 21,
+      "nombre": "Nalga",
+      "descripcion": "",
+      "precio": 9050,
+      "imagen": "/imagenes/nalga.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 22,
+      "nombre": "Nalga de Afuera",
+      "descripcion": "",
+      "precio": 9040,
+      "imagen": "/imagenes/nalga_de_afuera.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 23,
+      "nombre": "Ojo de Bife Ancho",
+      "descripcion": "",
+      "precio": 11910,
+      "imagen": "/imagenes/ojo_de_bife_ancho.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 24,
+      "nombre": "Osobuco",
+      "descripcion": "",
+      "precio": 5180,
+      "imagen": "/imagenes/ozobuco.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 25,
+      "nombre": "Paleta",
+      "descripcion": "",
+      "precio": 7680,
+      "imagen": "/imagenes/paleta.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 26,
+      "nombre": "Palomita",
+      "descripcion": "",
+      "precio": 7600,
+      "imagen": "/imagenes/palomita.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 27,
+      "nombre": "Peceto",
+      "descripcion": "",
+      "precio": 10170,
+      "imagen": "/imagenes/peceto.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 28,
+      "nombre": "Roast beef",
+      "descripcion": "",
+      "precio": 7250,
+      "imagen": "/imagenes/roastbeef.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 29,
+      "nombre": "Tapa de Asado",
+      "descripcion": "",
+      "precio": 7540,
+      "imagen": "/imagenes/tapa_de_asado.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 30,
+      "nombre": "Tapa de Bife Ancho",
+      "descripcion": "",
+      "precio": 7540,
+      "imagen": "/imagenes/tapa_de_bife_ancho.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 31,
+      "nombre": "Tapa de Cuadril",
+      "descripcion": "",
+      "precio": 7540,
+      "imagen": "/imagenes/tapa_de_cuadril.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 32,
+      "nombre": "Tapa de Nalga",
+      "descripcion": "",
+      "precio": 7540,
+      "imagen": "/imagenes/tapa_de_nalga.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 33,
+      "nombre": "Tortuguita",
+      "descripcion": "",
+      "precio": 7180,
+      "imagen": "/imagenes/tortuguita.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    },
+    {
+      "id": 34,
+      "nombre": "Vacío",
+      "descripcion": "",
+      "precio": 9000,
+      "imagen": "/imagenes/vacio.jpg",
+      "categoria": "",
+      "stock": 0,
+      "detalles": ""
+    }
+  ]
+}
