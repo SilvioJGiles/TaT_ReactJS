@@ -1,0 +1,208 @@
+{
+  "productos": [
+    {
+      "nombre": "Asado",
+      "descripcion": "Carne de Asado fresca y de calidad",
+      "precio": 7700,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Asado de Falda",
+      "descripcion": "Carne de Asado de Falda fresca",
+      "precio": 4860,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Azotillo",
+      "descripcion": "Azotillo fresco",
+      "precio": 4860,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Bife Ancho",
+      "descripcion": "Bife Ancho de calidad premium",
+      "precio": 7490,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Bife Angosto",
+      "descripcion": "Bife Angosto fresco",
+      "precio": 7860,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Bife con Lomo",
+      "descripcion": "Bife con Lomo de primera",
+      "precio": 7860,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Bola de Lomo",
+      "descripcion": "Bola de Lomo fresca",
+      "precio": 8510,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Carnaza de Paleta",
+      "descripcion": "Carnaza de Paleta fresca",
+      "precio": 5620,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Cogote",
+      "descripcion": "Cogote fresco",
+      "precio": 5620,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Colita de Cuadril",
+      "descripcion": "Colita de Cuadril de calidad",
+      "precio": 10100,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Corazón de Cuadril",
+      "descripcion": "Corazón de Cuadril fresco",
+      "precio": 5300,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Cuadrada",
+      "descripcion": "Cuadrada fresca",
+      "precio": 8420,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Cuadril",
+      "descripcion": "Cuadril fresco",
+      "precio": 9100,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Entraña",
+      "descripcion": "Entraña fresca",
+      "precio": 9100,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Espinazo",
+      "descripcion": "Espinazo fresco",
+      "precio": 4760,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Falda",
+      "descripcion": "Falda fresca",
+      "precio": 4760,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Garrón",
+      "descripcion": "Garrón fresco",
+      "precio": 4760,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Lomo",
+      "descripcion": "Lomo fresco de calidad premium",
+      "precio": 11910,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Marucha",
+      "descripcion": "Marucha fresca",
+      "precio": 4760,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Matambre",
+      "descripcion": "Matambre fresco",
+      "precio": 8090,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Nalga",
+      "descripcion": "Nalga fresca",
+      "precio": 9050,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Nalga de Afuera",
+      "descripcion": "Nalga de Afuera fresca",
+      "precio": 9040,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Ojo de Bife Ancho",
+      "descripcion": "Ojo de Bife Ancho fresco",
+      "precio": 11910,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Osobuco",
+      "descripcion": "Osobuco fresco",
+      "precio": 5180,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Paleta",
+      "descripcion": "Paleta fresca",
+      "precio": 7680,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Palomita",
+      "descripcion": "Palomita fresca",
+      "precio": 7600,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Peceto",
+      "descripcion": "Peceto fresco",
+      "precio": 10170,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Roast beef",
+      "descripcion": "Roast beef fresco",
+      "precio": 7250,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Tapa de Asado",
+      "descripcion": "Tapa de Asado fresca",
+      "precio": 7540,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Tapa de Bife Ancho",
+      "descripcion": "Tapa de Bife Ancho fresca",
+      "precio": 7540,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Tapa de Cuadril",
+      "descripcion": "Tapa de Cuadril fresca",
+      "precio": 7540,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Tapa de Nalga",
+      "descripcion": "Tapa de Nalga fresca",
+      "precio": 7540,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Tortuguita",
+      "descripcion": "Tortuguita fresca",
+      "precio": 7180,
+      "imagen": "https://via.placeholder.com/150"
+    },
+    {
+      "nombre": "Vacío",
+      "descripcion": "Vacío fresco",
+      "precio": 9000,
+      "imagen": "https://via.placeholder.com/150"
+    }
+  ]
+}

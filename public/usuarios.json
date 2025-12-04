@@ -1,0 +1,14 @@
+[
+  {
+    "nombre": "Silvio Giles",
+    "email": "sgiles@correo.com",
+    "password": "1234",
+    "rol": "usuario"
+  },
+  {
+    "nombre": "Administrador",
+    "email": "administrador@correo.com",
+    "password": "abcd",
+    "rol": "administrador"
+  }
+]
