@@ -201,7 +201,31 @@ export default function Productos() {
   // ======================================================
   // Render
   // ======================================================
-  if (cargando) return <p>Cargando productos...</p>;
+  if (cargando) return (
+    <div
+      className="d-flex justify-content-center align-items-center"
+      style={{ height: "60vh", flexDirection: "column", textAlign: "center" }}
+    >
+      <div
+        className="spinner-border text-primary"
+        role="status"
+        style={{ width: "3rem", height: "3rem", marginBottom: "1rem" }}
+      >
+        <span className="visually-hidden">Cargando...</span>
+      </div>
+      <p
+        style={{
+          fontSize: "1.5rem",
+          fontWeight: "700",
+          color: "#333",
+          margin: 0
+        }}
+      >
+        Cargando productos...
+      </p>
+    </div>
+  );
+
   if (error) return <p>{error}</p>;
 
   return (
@@ -232,7 +256,7 @@ export default function Productos() {
             style={{
               marginBottom: "1.5rem",
               padding: "0.8rem",
-              border: "1px solid #ccc",
+              border: "1px solid #cf4b0dff", // borde bordó de la tarjeta
               borderRadius: "8px",
               textAlign: "center",
             }}
@@ -242,12 +266,14 @@ export default function Productos() {
             <p style={{ marginBottom: "0.5rem" }}>Precio: ${producto.precio}</p>
 
             {producto.imagen && (
-              <img
-                src={producto.imagen}
-                alt={producto.nombre}
-                width="90%"
-                style={{ display: "block", margin: "0 auto 0.7rem" }}
-              />
+              <div style={{ border: "1px solid #ccc", padding: "4px", marginBottom: "0.7rem", borderRadius: "8px" }}>
+                <img
+                  src={producto.imagen}
+                  alt={producto.nombre}
+                  width="90%"
+                  style={{ display: "block", margin: "0 auto", borderRadius: "6px", border: "none" }}
+                />
+              </div>
             )}
 
             {/* Botón Más detalles */}
@@ -292,36 +318,33 @@ export default function Productos() {
         ))}
       </ul>
 
-{/* Paginación */}
-<div className="d-flex justify-content-center mt-3">
-  {Array.from({ length: totalPaginas }, (_, i) => (
-    <button
-      key={i + 1}
-      onClick={() => cambiarPagina(i + 1)}
-      className="btn btn-sm mx-1"
-      style={
-        paginaActual === i + 1
-          ? {
-              backgroundColor: "#cf4b0dff",      // color del botón "Más detalles"
-              color: "white",
-              border: "2.5px solid #cf4b0dff",
-              fontWeight: "700"
+      {/* Paginación */}
+      <div className="d-flex justify-content-center mt-3">
+        {Array.from({ length: totalPaginas }, (_, i) => (
+          <button
+            key={i + 1}
+            onClick={() => cambiarPagina(i + 1)}
+            className="btn btn-sm mx-1"
+            style={
+              paginaActual === i + 1
+                ? {
+                    backgroundColor: "#cf4b0dff",
+                    color: "white",
+                    border: "2.5px solid #cf4b0dff",
+                    fontWeight: "700"
+                  }
+                : {
+                    backgroundColor: "transparent",
+                    color: "white",
+                    border: "2.5px solid white",
+                    fontWeight: "700"
+                  }
             }
-          : {
-              backgroundColor: "transparent",
-              color: "white",
-              border: "2.5px solid white",
-              fontWeight: "700"
-            }
-      }
-    >
-      {i + 1}
-    </button>
-  ))}
-</div>
-
-
-
+          >
+            {i + 1}
+          </button>
+        ))}
+      </div>
 
       {/* Modal edición / agregar */}
       {modalVisible && (
