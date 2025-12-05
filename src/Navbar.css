@@ -1,38 +1,157 @@
-.navbar {
+/* =========================== */
+/* NAVBAR GENERAL               */
+/* =========================== */
+
+.nav-custom {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 24px;
-  background-color: #222;
+  padding: 0 20px;
+  height: 87px;
+  background-color: #050505;
+  position: relative;
+  z-index: 100;
   color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
-.nav-left a {
-  color: white;
-  margin-right: 16px;
+/* =========================== */
+/* LOGO                        */
+/* =========================== */
+.nav-custom .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #cfa122;
   text-decoration: none;
 }
 
-.nav-left a:hover {
-  text-decoration: underline;
+/* =========================== */
+/* HAMBURGUESA                  */
+/* =========================== */
+.hamburguesa {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  z-index: 110;
 }
 
-.nav-carrito {
-  position: relative;
+.hamburguesa .linea {
+  height: 4px;
+  width: 100%;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburguesa .linea.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburguesa .linea.open:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburguesa .linea.open:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* =========================== */
+/* MENU DE ESCRITORIO           */
+/* =========================== */
+.menu-desktop {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-desktop li a,
+.menu-desktop li button {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
   background: none;
   border: none;
-  color: white;
-  font-size: 24px;
   cursor: pointer;
 }
 
-.nav-carrito .badge {
-  position: absolute;
-  top: -6px;
-  right: -10px;
-  background-color: red;
+.menu-desktop li a:hover,
+.menu-desktop li button:hover {
+  text-decoration: underline;
+}
+
+/* =========================== */
+/* MENU MÓVIL                  */
+/* =========================== */
+.menu-movil {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 75%;
+  max-width: 300px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.95);
+  padding: 100px 20px 20px 20px;
+  transition: left 0.3s ease;
+  z-index: 1050;
+}
+
+.menu-movil.open {
+  left: 0;
+}
+
+.menu-movil ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.menu-movil ul li a,
+.menu-movil ul li button {
   color: white;
-  border-radius: 50%;
-  padding: 2px 6px;
-  font-size: 12px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-movil ul li a:hover,
+.menu-movil ul li button:hover {
+  text-decoration: underline;
+}
+
+/* =========================== */
+/* RESPONSIVE                  */
+/* =========================== */
+@media (max-width: 992px) {
+  .hamburguesa {
+    display: flex;
+  }
+
+  .menu-desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-movil {
+    width: 80%;
+    padding-top: 100px;
+  }
+
+  .menu-movil ul li a,
+  .menu-movil ul li button {
+    font-size: 1.4rem;
+  }
 }

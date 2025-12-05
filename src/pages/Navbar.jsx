@@ -1,101 +1,89 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useCarrito } from '../context/CarritoContext';
 import Carrito from './Carrito';
+import '../Navbar.css';
+
 
 function Navbar() {
+  const [open, setOpen] = useState(false);
   const { isAuthenticated, usuario, cerrarSesion } = useAuth();
   const { carrito } = useCarrito();
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container-fluid">
+    <>
+  <nav className="nav-custom">
 
-        {/* Logo: si es admin → dashboard */}
-        <Link
-          className="navbar-brand"
-          to={usuario?.rol === "administrador" ? "/dashboard" : "/"}
-        >
-          Carni Line
-        </Link>
+    {/* Hamburguesa a la izquierda */}
+    <div className="hamburguesa" onClick={() => setOpen(!open)}>
+      <div className={open ? "linea open" : "linea"}></div>
+      <div className={open ? "linea open" : "linea"}></div>
+      <div className={open ? "linea open" : "linea"}></div>
+    </div>
 
-        {/* Botón hamburguesa */}
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+    {/* Logo */}
+    <Link
+      className="logo"
+      to={usuario?.rol === "administrador" ? "/dashboard" : "/"}
+    >
+      Carni Line
+    </Link>
 
-        {/* Contenido del menú */}
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto align-items-center">
+    {/* Menu Desktop (queda igual) */}
+    <ul className="menu-desktop">
+      <li><Link to="/">Inicio</Link></li>
+      <li><Link to="/servicios">Servicios</Link></li>
+      <li><Link to="/productos">Productos</Link></li>
 
-            {/* Links generales */}
-            <li className="nav-item">
-              <Link
-                className="nav-link"
-                to={usuario?.rol === "administrador" ? "/dashboard" : "/"}
-              >
-                Inicio
-              </Link>
-            </li>
+      {isAuthenticated ? (
+        <>
+          <li className="saludo">Hola, <b>{usuario.nombre}</b></li>
 
-            <li className="nav-item">
-              <Link className="nav-link" to="/servicios">Servicios</Link>
-            </li>
+          {usuario.rol === "administrador" && (
+            <li><Link to="/dashboard">Administrar</Link></li>
+          )}
 
-            <li className="nav-item">
-              <Link className="nav-link" to="/productos">Productos</Link>
-            </li>
+          <li><button className="btn-salir" onClick={cerrarSesion}>Salir</button></li>
+          <li><Carrito /></li>
+        </>
+      ) : (
+        <li><Link to="/iniciar-sesion">Iniciar Sesión</Link></li>
+      )}
+    </ul>
 
-            {/* Zona derecha: usuario y carrito */}
-            <li className="nav-item">
-              {isAuthenticated ? (
-                <div className="d-flex align-items-center gap-3">
+  </nav>
 
-                  {/* Saludo */}
-                  <span className="text-white">
-                    👋 Hola, <strong>{usuario.nombre}</strong>
-                  </span>
 
-                  {/* Botón visible solo si es administrador */}
-                  {usuario.rol === "administrador" && (
-                    <Link
-                      className="btn btn-warning btn-sm"
-                      to="/dashboard"
-                    >
-                      Administrar
-                    </Link>
-                  )}
+      {/* Menu Móvil (Overlay) */}
+      <div className={`menu-movil ${open ? "open" : ""}`}>
+        <ul>
+          <li><Link to="/" onClick={() => setOpen(false)}>Inicio</Link></li>
+          <li><Link to="/servicios" onClick={() => setOpen(false)}>Servicios</Link></li>
+          <li><Link to="/productos" onClick={() => setOpen(false)}>Productos</Link></li>
 
-                  {/* Botón cerrar sesión */}
-                  <button
-                    className="btn btn-outline-light btn-sm"
-                    onClick={cerrarSesion}
-                  >
-                    Cerrar Sesión
-                  </button>
+          {isAuthenticated ? (
+            <>
+              <li className="saludo">Hola, <b>{usuario.nombre}</b></li>
 
-                  {/* Carrito (solo logueado) */}
-                  <Carrito />
-                </div>
-              ) : (
-                <Link className="nav-link" to="/iniciar-sesion">Iniciar Sesión</Link>
+              {usuario.rol === "administrador" && (
+                <li><Link to="/dashboard" onClick={() => setOpen(false)}>Administrar</Link></li>
               )}
-            </li>
 
-          </ul>
-        </div>
+              <li>
+                <button className="btn-salir" onClick={() => { cerrarSesion(); setOpen(false); }}>
+                  Cerrar Sesión
+                </button>
+              </li>
 
+              <li><Carrito /></li>
+            </>
+          ) : (
+            <li><Link to="/iniciar-sesion" onClick={() => setOpen(false)}>Iniciar Sesión</Link></li>
+          )}
+        </ul>
       </div>
-    </nav>
+    </>
   );
 }
 
