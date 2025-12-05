@@ -35,26 +35,9 @@ function Navbar() {
       <li><Link to="/">Inicio</Link></li>
       <li><Link to="/servicios">Servicios</Link></li>
       <li><Link to="/productos">Productos</Link></li>
-
-      {isAuthenticated ? (
-        <>
-          <li className="saludo">Hola, <b>{usuario.nombre}</b></li>
-
-          {usuario.rol === "administrador" && (
-            <li><Link to="/dashboard">Administrar</Link></li>
-          )}
-
-          <li><button className="btn-salir" onClick={cerrarSesion}>Salir</button></li>
-          <li><Carrito /></li>
-        </>
-      ) : (
-        <li><Link to="/iniciar-sesion">Iniciar Sesión</Link></li>
-      )}
     </ul>
 
   </nav>
-
-
       {/* Menu Móvil (Overlay) */}
       <div className={`menu-movil ${open ? "open" : ""}`}>
         <ul>

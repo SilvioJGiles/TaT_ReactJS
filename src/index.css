@@ -9,11 +9,11 @@ body {
 }
 
 body {
-  background-image: url('/imagenes/fondo.jpg'); /* Cambia por la ruta real de tu imagen */
-  background-repeat: no-repeat;       /* No repetir la imagen */
-  background-size: cover;             /* Que la imagen cubra todo el fondo */
-  background-position: center center; /* Centrar la imagen */
-  background-attachment: fixed;       /* Que la imagen quede fija al hacer scroll */
+  background-image: url('/imagenes/fondo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;            
+  background-position: center center;
+  background-attachment: fixed;      
 }
 
 
@@ -90,7 +90,7 @@ nav .logo img {
 /* Estilo para el carrito */
 .carrito-container {
   position: fixed;
-  top: 80px; /* Dejamos espacio para que no esté encima del header */
+  top: 80px;
   right: 20px;
   width: 300px;
   display: none;
@@ -99,7 +99,7 @@ nav .logo img {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   border-radius: 8px;
-  overflow-y: auto; /* Asegura que no se sobrepase */
+  overflow-y: auto; 
 }
 
 .carrito-container h2 {
@@ -112,27 +112,27 @@ nav .logo img {
   top: 20px;
   right: 20px;
   cursor: pointer;
-  background-color: white; /* Fondo blanco */
-  border-radius: 50%; /* Hace que el fondo sea circular */
-  padding: 10px; /* Espacio alrededor de la imagen y el ícono */
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
   display: flex;
-  justify-content: center; /* Centra el contenido horizontalmente */
-  align-items: center; /* Centra el contenido verticalmente */
-  width: 50px; /* Ajusta el tamaño del contenedor */
-  height: 50px; /* Ajusta el tamaño del contenedor */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
-  z-index: 1100; /* Asegura que esté encima de otros elementos */
+  justify-content: center; 
+  align-items: center;
+  width: 50px;
+  height: 50px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1100;
 }
 
 #carrito-icono img {
-  width: 100%; /* Ajusta el tamaño de la imagen al 70% del tamaño del contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
-  object-fit: contain; /* Asegura que la imagen se ajusta dentro del contenedor sin distorsionarse */
-  display: block; /* Elimina el espacio debajo de la imagen */
+  width: 100%; 
+  height: auto;
+  object-fit: contain; 
+  display: block; 
 }
 
 #carrito-icono i {
-  font-size: 0; /* Esconde el ícono de Font Awesome */
+  font-size: 0; 
 }
 
 

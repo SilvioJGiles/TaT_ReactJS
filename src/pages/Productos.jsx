@@ -37,9 +37,7 @@ export default function Productos() {
 
   const API_URL = "https://692976f49d311cddf34a01f2.mockapi.io/api/v1/productos";
 
-  // ======================================================
   // Cargar productos
-  // ======================================================
   useEffect(() => {
     fetch(API_URL)
       .then(res => res.json())
@@ -62,9 +60,7 @@ export default function Productos() {
       });
   }, []);
 
-  // ======================================================
   // Filtrado y paginación
-  // ======================================================
   const productosFiltrados = productos.filter(p =>
     p.nombre.toLowerCase().includes(busqueda.toLowerCase()) ||
     (p.categoria && p.categoria.toLowerCase().includes(busqueda.toLowerCase()))
@@ -77,9 +73,7 @@ export default function Productos() {
 
   const cambiarPagina = (numero) => setPaginaActual(numero);
 
-  // ======================================================
   // Comprar
-  // ======================================================
   const manejarComprar = (producto) => {
     if (!isAuthenticated) {
       navigate("/iniciar-sesion");
@@ -88,9 +82,7 @@ export default function Productos() {
     }
   };
 
-  // ======================================================
   // Abrir modal edición
-  // ======================================================
   const abrirModalEditar = (productoId) => {
     if (!productoId) {
       setFormData({ id: "", nombre: "", descripcion: "", precio: "", imagen: "" });
@@ -119,9 +111,7 @@ export default function Productos() {
 
   const manejarCerrarModal = () => setModalVisible(false);
 
-  // ======================================================
   // Inputs formulario edición
-  // ======================================================
   const manejarInputChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
@@ -138,9 +128,7 @@ export default function Productos() {
     reader.readAsDataURL(file);
   };
 
-  // ======================================================
   // Guardar edición / agregar producto
-  // ======================================================
   const manejarGuardarCambios = () => {
     setErrorGuardar("");
 
@@ -173,9 +161,7 @@ export default function Productos() {
       .catch(err => setErrorGuardar("No se pudo guardar el producto. La imagen puede ser demasiado grande."));
   };
 
-  // ======================================================
   // Confirmación eliminar
-  // ======================================================
   const manejarEliminar = (producto) => {
     setProductoAEliminar(producto);
     setModalEliminarVisible(true);
@@ -198,9 +184,7 @@ export default function Productos() {
       .catch(err => console.error(err));
   };
 
-  // ======================================================
   // Render
-  // ======================================================
   if (cargando) return (
     <div
       className="d-flex justify-content-center align-items-center"

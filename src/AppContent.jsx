@@ -13,7 +13,7 @@ import IniciarSesion from "./pages/IniciarSesion";
 import Footer from './pages/Footer';
 import Dashboard from "./pages/Dashboard";
 
-import Administrar from "./pages/Administrar";   // ← NUEVO
+import Administrar from "./pages/Administrar";
 
 import { useAuth } from "./context/AuthContext";  // ← Para validar rol
 import { ToastContainer } from "react-toastify";
@@ -45,7 +45,7 @@ export default function AppContent() {
           }
         />
 
-        {/* ADMINISTRAR: SOLO ADMINISTRADORES */}
+        {/* ADMINISTRAR: Solo para rol "administrador" */}
         <Route
           path="/administrar"
           element={

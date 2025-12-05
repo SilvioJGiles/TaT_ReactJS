@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <Helmet>
-        <title>Mi Tienda Online</title>
+        <title>Tu carnicería en la web</title>
         <meta name="description" content="Compra productos de calidad en nuestra tienda online."/>
         <meta name="keywords" content="productos, tienda online, compras"/>
         <meta name="author" content="Tu Nombre"/>

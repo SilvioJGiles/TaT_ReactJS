@@ -18,9 +18,6 @@ function Servicios() {
     backgroundColor: '#E6735C',
   };
 
-  // Para manejar el hover en inline styles, se necesitaría más código (useState y handlers), 
-  // así que para simplicidad dejamos solo el estilo base.
-
   return (
     <div style={{
       padding: '20px',
