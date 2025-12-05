@@ -9,11 +9,6 @@ export default function Dashboard() {
   // Token desde localStorage
   const tokenActual = localStorage.getItem('authToken');
 
-  // Ir al formulario de agregar producto
-  const manejarAgregarProducto = () => {
-    navigate('/formulario-producto');
-  };
-
   return (
     <div style={{ padding: '20px', minHeight: '60vh' }}>
       <h1>Dashboard Administrativo</h1>
@@ -53,20 +48,6 @@ export default function Dashboard() {
               marginTop: '10px',
             }}
           >
-            {/* AGREGAR PRODUCTOS */}
-            <button
-              onClick={manejarAgregarProducto}
-              style={{
-                padding: '10px 20px',
-                background: '#28a745',
-                color: 'white',
-                borderRadius: '4px',
-                border: 'none',
-                cursor: 'pointer',
-              }}
-            >
-              Agregar Productos
-            </button>
 
             {/* LISTA DE PRODUCTOS */}
             <Link
@@ -79,7 +60,7 @@ export default function Dashboard() {
                 textDecoration: 'none',
               }}
             >
-              Ver / Editar / Eliminar Productos
+              Ver / Agregar / Editar / Eliminar Productos
             </Link>
           </div>
         </div>

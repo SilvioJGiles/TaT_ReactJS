@@ -1,0 +1,265 @@
+/* =========================================================
+   BASE
+========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: pink;
+  color: white;
+}
+
+/* =========================================================
+   NAVBAR (BOOTSTRAP + PERSONALIZADO)
+========================================================= */
+
+/* Estilo general del navbar sin romper Bootstrap */
+nav.navbar {
+  background-color: #050505 !important;
+  height: 87px;
+  padding: 10px 20px;
+}
+
+/* Links */
+.navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Fondo oscuro para menú hamburguesa */
+.navbar-collapse.show {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+  position: absolute;
+  top: 87px;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 9999 !important;
+}
+
+/* Ajuste en pantallas grandes */
+@media (min-width: 992px) {
+  .navbar-collapse.show {
+    position: static;
+    background: none !important;
+    padding: 0;
+  }
+}
+
+/* =========================================================
+   CARRITO
+========================================================= */
+
+.carrito-container {
+  position: fixed;
+  top: 90px;
+  right: 20px;
+  width: 300px;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1100;
+  border-radius: 8px;
+  overflow-y: auto;
+  display: none;
+}
+
+#carrito-icono {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1200;
+}
+
+#carrito-icono img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+#carrito-cantidad {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 4px 7px;
+  font-size: 12px;
+}
+
+/* =========================================================
+   PRODUCTOS
+========================================================= */
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.producto-card {
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #f5dbdb;
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+
+.producto-card:hover {
+  transform: translateY(-10px);
+}
+
+.producto-card img {
+  width: 80%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 10px auto;
+}
+
+.producto-card .card-body {
+  padding: 5px;
+}
+
+.producto-card .btn {
+  width: 100%;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .producto-card {
+    width: 45%;
+  }
+}
+
+/* =========================================================
+   RESEÑAS
+========================================================= */
+
+.reseñas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 50px 20px;
+}
+
+.reseña {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* =========================================================
+   CONTACTO
+========================================================= */
+
+.contacto {
+  padding: 50px 20px;
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  color: #333;
+}
+
+.contacto h2 {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 30px;
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contacto input,
+.contacto textarea,
+.contacto button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__column {
+  min-width: 150px;
+  margin: 1rem;
+}
+
+.footer__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.footer__social {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* =========================================================
+   TITULOS
+========================================================= */
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  color: #2c2c2c;
+}
