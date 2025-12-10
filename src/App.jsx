@@ -26,7 +26,7 @@ function App() {
         <title>Tu carnicería en la web</title>
         <meta name="description" content="Compra productos de calidad en nuestra tienda online."/>
         <meta name="keywords" content="productos, tienda online, compras"/>
-        <meta name="author" content="Tu Nombre"/>
+        <meta name="author" content="Silvio J. Giles"/>
       </Helmet>
 
       <CarritoProvider>
